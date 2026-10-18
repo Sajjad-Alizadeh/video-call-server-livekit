@@ -1,0 +1,39 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; color: #f4f3ef; background: #141916; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, textarea, input, select { font: inherit; }
+button { min-height: 48px; padding: 12px 24px; cursor: pointer; border: 0; border-radius: 6px; background: #d0e6ba; color: #182218; font-weight: 650; }
+button:hover { background: #e1f2d2; }
+button:disabled { cursor: default; opacity: .55; }
+:focus-visible { outline: 3px solid #d0e6ba; outline-offset: 4px; }
+.join-page { min-height: 100dvh; display: grid; place-items: center; padding: 48px 24px; }
+.join-content { width: min(100%, 560px); }
+.eyebrow { color: #c1d8af; font-size: 12px; font-weight: 650; letter-spacing: .15em; }
+h1 { font-size: clamp(36px, 7vw, 56px); line-height: 1.08; font-weight: 500; letter-spacing: -.04em; margin: 24px 0; }
+.intro { font-size: 18px; color: #c3cac3; line-height: 1.6; margin-bottom: 32px; }
+form > label { display: block; margin-bottom: 12px; font-weight: 600; }
+textarea { width: 100%; resize: vertical; border: 1px solid #657365; border-radius: 6px; background: #1c241e; color: inherit; padding: 16px; line-height: 1.5; overflow-wrap: anywhere; }
+.hint { color: #b5bfb5; font-size: 14px; line-height: 1.6; }
+fieldset { border: 0; padding: 0; margin: 24px 0; }
+legend { margin-bottom: 8px; font-weight: 600; }
+.choice { display: flex; align-items: center; gap: 12px; min-height: 44px; cursor: pointer; }
+input[type="checkbox"] { width: 20px; height: 20px; accent-color: #c1d8af; }
+form > button { width: 100%; margin: 8px 0 16px; }
+.error { color: #ffb4a8; background: #321e1b; padding: 16px; line-height: 1.5; border-radius: 6px; }
+.meeting { min-height: 100dvh; display: flex; flex-direction: column; }
+.meeting-header { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; padding: 16px 24px; border-bottom: 1px solid #3d493f; }
+.meeting-header span { color: #b5bfb5; }
+.meeting-header button { margin-left: auto; }
+.conference { height: calc(100dvh - 90px); min-height: 450px; }
+@media (max-width: 540px) { .meeting-header { padding: 12px; } .conference { height: calc(100dvh - 140px); } }
+.host-panel { border-top: 1px solid #657365; margin-top: 32px; padding-top: 24px; }
+.host-panel summary { min-height: 44px; cursor: pointer; font-weight: 650; padding: 12px 0; }
+.host-fields { display: grid; gap: 12px; margin: 20px 0; min-width: 0; }
+.host-fields label, .invitation-result label { display: block; margin-bottom: 8px; font-weight: 600; }
+.host-fields input, .host-fields select { min-height: 48px; width: 100%; min-width: 0; border: 1px solid #657365; border-radius: 6px; padding: 12px; background: #1c241e; color: inherit; }
+.host-fields .hint { margin: 0 0 8px; }
+.field-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.host-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.host-actions .secondary { background: transparent; color: #d0e6ba; border: 1px solid #657365; }
+.invitation-result { border-top: 1px solid #657365; margin-top: 24px; padding-top: 16px; line-height: 1.5; }
+@media (max-width: 540px) { .field-pair { grid-template-columns: 1fr; } }
